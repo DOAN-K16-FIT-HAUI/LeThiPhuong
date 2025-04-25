@@ -1,0 +1,196 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 10px;
+    box-shadow: 10px 10px 15px rgba(25, 25, 25, 0.1);
+    z-index: 999;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Viền mờ cho 3 cạnh */
+    border-radius: 50px;
+    padding: 0px 20px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .user-avatar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        span {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+    }
+}
+
+.logo {
+    img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+}
+
+.search-bar {
+    width: 500px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #55d5d2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: relative;
+    select {
+        width: fit-content;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        padding-left: 10px;
+    }
+    button {
+        width: 50px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    h3 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: #000;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+.search-result-empty {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #55d5d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-result {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid #55d5d2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#search-result-item {
+    text-decoration: none;
+    color: #000;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .button-register {
+        background-color: #55d5d2;
+        border-radius: 20px;
+        color: #fff;
+        &:hover {
+            background-color: #55d5d2;
+        }
+    }
+    .button-login {
+        border: 1px solid #55d5d2;
+        border-radius: 20px;
+        color: #55d5d2;
+        &:hover {
+            background-color: #55d5d2;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+    }
+}

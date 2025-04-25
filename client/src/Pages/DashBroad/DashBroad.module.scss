@@ -1,0 +1,110 @@
+.admin-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .admin-header {
+        background-color: #fff;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        height: 64px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            .logo-text {
+                margin: 0;
+                color: #1677ff;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .admin-sider {
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        margin-right: 1px;
+        overflow: auto;
+        height: calc(100vh - 64px);
+        position: sticky;
+        top: 64px;
+
+        .admin-menu {
+            border-right: none;
+            padding: 16px 0;
+
+            :global {
+                .ant-menu-item {
+                    height: 48px;
+                    line-height: 48px;
+                    margin: 4px 16px;
+                    border-radius: 6px;
+
+                    &:hover {
+                        color: #1677ff;
+                        background-color: #f0f8ff;
+                    }
+                }
+
+                .ant-menu-item-selected {
+                    background-color: #e6f7ff;
+                    color: #1677ff;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .admin-content {
+        padding: 24px;
+        background-color: #f5f5f5;
+        min-height: calc(100vh - 64px);
+        overflow: auto;
+
+        .content-section {
+            background-color: #fff;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .dashboard-content {
+            .stat-cards {
+                margin-top: 24px;
+            }
+
+            .stat-card {
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                }
+
+                .stat-icon {
+                    font-size: 24px;
+                    color: #1677ff;
+                }
+
+                :global {
+                    .ant-statistic-title {
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+
+                    .ant-statistic-content {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

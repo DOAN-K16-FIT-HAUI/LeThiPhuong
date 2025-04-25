@@ -1,0 +1,84 @@
+.manager-order {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+        }
+
+        .filters {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .order-table {
+        margin-top: 16px;
+
+        :global {
+            .ant-table-thead > tr > th {
+                background-color: #f5f5f5;
+                font-weight: 600;
+            }
+
+            .ant-table-tbody > tr:hover > td {
+                background-color: #f0f7ff;
+            }
+        }
+    }
+
+    .action-select {
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .ant-select-selector {
+            border-radius: 4px !important;
+            border: 1px solid #d9d9d9;
+
+            &:hover {
+                border-color: #1890ff;
+            }
+        }
+    }
+
+    .products-list {
+        margin-top: 24px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .ant-card {
+            margin-bottom: 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    .order-details {
+        .ant-descriptions-item-label {
+            background-color: #f5f5f5;
+            font-weight: 500;
+        }
+    }
+}

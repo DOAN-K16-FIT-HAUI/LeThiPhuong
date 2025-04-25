@@ -1,0 +1,23 @@
+.container {
+    min-height: 100vh;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.category-title {
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        border-bottom: 1px solid #55d5d2;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        color: #55d5d2;
+    }
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+}

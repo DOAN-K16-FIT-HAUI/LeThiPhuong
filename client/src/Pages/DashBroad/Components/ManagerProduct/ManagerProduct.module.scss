@@ -1,0 +1,88 @@
+.manager-product {
+    padding: 20px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+    }
+
+    .search-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .product-form {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 16px;
+
+        .upload-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .preview-image {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+                margin-top: 10px;
+                border: 1px solid #d9d9d9;
+                border-radius: 4px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .table-wrapper {
+        margin-top: 24px;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .price-column {
+        min-width: 120px;
+    }
+
+    .image-thumbnail {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    :global {
+        .ant-table-thead > tr > th {
+            background-color: #f0f2f5;
+            font-weight: 600;
+        }
+
+        .ant-upload-list-picture .ant-upload-list-item {
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            padding: 8px;
+        }
+    }
+}

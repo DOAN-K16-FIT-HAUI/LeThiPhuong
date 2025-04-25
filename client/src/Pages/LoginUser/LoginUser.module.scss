@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 120px auto;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #f9f3e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+.login-form {
+    :global {
+        .ant-form-item-label > label {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .ant-input-affix-wrapper {
+            border-radius: 8px;
+        }
+
+        .ant-input-affix-wrapper-focused {
+            border-color: #4fd1c5;
+            box-shadow: 0 0 0 2px rgba(79, 209, 197, 0.2);
+        }
+
+        .ant-btn-primary {
+            background-color: #4fd1c5;
+            border-color: #4fd1c5;
+
+            &:hover {
+                background-color: #3bb3a7;
+                border-color: #3bb3a7;
+            }
+        }
+    }
+}
+
+.required {
+    color: #f44336;
+}
+
+.privacy-note {
+    margin-bottom: 20px;
+
+    p {
+        font-size: 12px;
+        color: #666;
+    }
+
+    a {
+        color: #ff8a00;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.register-btn {
+    width: 100%;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    a {
+        color: #4fd1c5;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
